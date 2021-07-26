@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          twitch:
+            provider: twitch
+            authorization-grant-type: client_credentials
+            client-authentication-method: client_secret_post
+            client-id: ${games-api.twitch.client-id}
+            client-secret: ${games-api.twitch.client-secret}
+        provider:
+          twitch:
+            token-uri: https://id.twitch.tv/oauth2/token
+    user:
+      password: games
