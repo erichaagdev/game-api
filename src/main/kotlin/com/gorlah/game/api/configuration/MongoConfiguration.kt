@@ -1,4 +1,4 @@
-package com.gorlah.game.api
+package com.gorlah.game.api.configuration
 
 import org.springframework.context.ApplicationListener
 import org.springframework.context.annotation.Bean

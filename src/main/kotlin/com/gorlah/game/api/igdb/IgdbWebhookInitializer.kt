@@ -1,6 +1,7 @@
-package com.gorlah.game.api
+package com.gorlah.game.api.igdb
 
 import com.fasterxml.jackson.databind.JsonNode
+import com.gorlah.game.api.GameApiProperties
 import org.springframework.context.ApplicationListener
 import org.springframework.context.annotation.Profile
 import org.springframework.context.event.ContextRefreshedEvent
@@ -24,7 +25,6 @@ class IgdbWebhookInitializer(
         Mono.just(event)
             .flatMap { registerWebhook("/games", "create") }
             .flatMap { registerWebhook("/games", "update") }
-            .flatMap { registerWebhook("/games", "delete") }
             .subscribe()
     }
 

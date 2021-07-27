@@ -1,5 +1,6 @@
-package com.gorlah.game.api
+package com.gorlah.game.api.configuration
 
+import com.gorlah.game.api.GameApiProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.security.authorization.AuthorizationDecision
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity

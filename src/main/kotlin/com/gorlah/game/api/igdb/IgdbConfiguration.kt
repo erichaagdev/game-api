@@ -1,5 +1,6 @@
-package com.gorlah.game.api
+package com.gorlah.game.api.igdb
 
+import com.gorlah.game.api.GameApiProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.MediaType

@@ -1,4 +1,7 @@
 spring:
+  data:
+    mongodb:
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
   security:
     oauth2:
       client:
@@ -12,5 +15,3 @@ spring:
         provider:
           twitch:
             token-uri: https://id.twitch.tv/oauth2/token
-    user:
-      password: games

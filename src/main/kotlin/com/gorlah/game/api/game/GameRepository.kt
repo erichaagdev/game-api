@@ -1,4 +1,4 @@
-package com.gorlah.game.api
+package com.gorlah.game.api.game
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository
 
